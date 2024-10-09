@@ -1,81 +1,21 @@
-\# Assignment Submission Portal - Backend
+# Assignment Submission Portal - Backend
 
-\## Table of Contents
+## Introduction
+The **Assignment Submission Portal** is a backend application designed for managing assignment submissions. Users can upload assignments, and administrators can review, accept, or reject them. This portal is suitable for educational institutions or organizations looking for a structured way to handle assignment workflows.
 
-\- \[Introduction\](#introduction)
+## Features
+- **User Registration & Login**: Users can register and log in.
+- **Assignment Upload**: Users can upload assignments.
+- **Admin Functions**: Admins can manage all submitted assignments.
+- **Secure Authentication**: JWT-based authentication for protected endpoints.
 
-\- \[Features\](#features)
+## Technologies Used
+- **Sanic**: A Python web framework for building asynchronous APIs.
+- **MongoDB**: A NoSQL database for storing user and assignment data.
+- **JWT (JSON Web Tokens)**: Secure token-based authentication.
+- **Python 3.10**: Programming language used.
 
-\- \[Technologies Used\](#technologies-used)
-
-\- \[Setup and Installation\](#setup-and-installation)
-
-\- \[API Endpoints\](#api-endpoints)
-
-\- \[Sample JSON Data\](#sample-json-data)
-
-\- \[Testing the Application\](#testing-the-application)
-
-\- \[Contributing\](#contributing)
-
-\- \[License\](#license)
-
-\## Introduction
-
-The \*\*Assignment Submission Portal\*\* is a backend application designed to facilitate the submission and management of assignments for users and administrators. Users can upload assignments, and administrators can review, accept, or reject them. This project aims to provide a structured and efficient way to handle assignment submissions in educational or organizational settings.
-
-\## Features
-
-\- \*\*User Registration & Login\*\*: Users can register and log in to the system.
-
-\- \*\*Assignment Upload\*\*: Users can upload assignments with relevant details.
-
-\- \*\*Admin Functions\*\*: Administrators can register, log in, and manage assignments.
-
-\- \*\*Assignment Management\*\*: Admins can view, accept, or reject assignments.
-
-\- \*\*Secure Authentication\*\*: Implements token-based authentication to secure endpoints.
-
-\## Technologies Used
-
-\- \*\*Sanic\*\*: A Python web framework for building APIs.
-
-\- \*\*MongoDB\*\*: A NoSQL database for storing user and assignment data.
-
-\- \*\*JWT (JSON Web Tokens)\*\*: For secure user authentication.
-
-\- \*\*Python 3.10\*\*: Programming language used for the backend logic.
-
-\## Setup and Installation
-
-1\. \*\*Clone the Repository\*\*:
-
-\`\`\`bash
-
-git clone https://github.com/your-username/assignment\_submission\_portal.git
-
-cd assignment\_submission\_portal
-
-2\. \*\*Create a Virtual Environment\*\*:
-
-To create a virtual environment, run:
-
-\`\`\`bash
-
-python -m venv venv
-
-3\. \*\*Install Dependencies\*\*:
-
-Once the virtual environment is activated, install the required packages:
-
-pip install -r requirements.txt
-
-4.\*\* Run the Application\*\*
-
-Finally, run the application using:
-
+## Running the Application
+To run the application, use the following command:
+```bash
 sanic app
-
-\*\*The API will be available at http://127.0.0.1:8000\*\*
-
-You can test the API using tools like Postman or curl. Ensure that you include the necessary headers, especially for endpoints that require authentication (Bearer token).
