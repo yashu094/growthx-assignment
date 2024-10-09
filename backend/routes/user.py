@@ -28,6 +28,7 @@ async def upload_assignment(request):
     data = request.json
     await create_assignment(data['userId'], data['task'], data['admin'])
     return response.json({'message': 'Assignment uploaded successfully'})
+# View admins
 @user_bp.route('/admins', methods=['GET'])
 @token_required
 async def fetch_all_admins(request):
